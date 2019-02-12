@@ -31,6 +31,7 @@ a:hover, a:focus {
 }
 button:focus,
 input:focus,
+select:focus,
 textarea:focus {
     outline: none;
 }
@@ -147,43 +148,8 @@ body{
 /*-------------------------------------------------- Slider CSS -----------------------*/
 
 #slider {
-    padding: 0;
-}
-.slider {
-    background: #333;
-}
-.carousel-fade .carousel-inner .item {
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-}
-.carousel-fade .carousel-inner .item,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  opacity: 0;
-}
-.carousel-fade .carousel-inner .active,
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.project_img,
-.slider_content {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    width: 39%;
-    transform: translateY(-50%);
-}
-.slider_content {
-    left: initial;
-    right: 10%;
-}
-.slider_content a:first-child {
-    font-size: 30px;
-    letter-spacing: 1px;
-}
-.slider_content p {
-    margin: 15px 0;
+    padding: 150px;
+    background: gray;
 }
 
 
@@ -193,222 +159,36 @@ body{
 #about {
     background: #fff;
 }
-.progress-bar {
-    background-color: #E93100;
+.pricing li {
+    padding: 7px 15px;
+    border: 1px solid gray;
+    border-top: 0;
 }
-.skill label{
-    float: left;
-    width: 110px;
+.pricing-heading {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid gray;
 }
-
-
-
-/*-------------------------------------------------- Service CSS -----------------------*/
-
-#service {
-	background: #ccc;
+.pricing-heading h2 {
+    margin-bottom: 10px;
 }
-.nav-tabs {
-    border-bottom: none;
+.pricing-heading h3 strike {
+    display: block;
+    font-size: 70%;
 }
-.nav-tabs>li {
-    width: 100%;
-    margin: 0;
-}
-.nav-tabs>li>a {
-    border: 1px solid #ddd !important;
-    margin: 7px 0;
-    color: #000;
-    background: #bbb;
-}
-.nav-tabs>li>a i {
+.pricing li span {
     float: right;
-    font-size: 20px;
 }
-.tab-content {
-    margin: 7px 0;
-    padding: 0 7px;
-}
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-
-
-/*-------------------------------------------------- Portfolio CSS -----------------------*/
-
-.button-group {
-    display: table;
-    margin: 40px auto;
-    overflow: hidden;
-    padding: 0 10px;
-}
-.button-group button {
-    background: #333;
-    color: #fff;
+.pricing button {
+    background: green;
+    color: white;
+    padding: 13px;
+    width: 100%;
     border: none;
-    float: left;
-    padding: 15px 25px;
-    margin: 0;
-    position: relative;
-    border-right: 1px solid;
-}
-.button.is-checked:hover:before,
-.button.is-checked:hover:after,
-.button.is-checked:hover,
-.button.is-checked:before,
-.button.is-checked:after,
-.button.is-checked {
-    background-color: #e93100;
-}
-.element-item {
-    position: relative;
-    float: left;
-    width: 25%;
-    height: auto;
-    max-height: 260px;
-    background: #888;
-    color: #262524;
-    overflow: hidden;
-}
-.element-item:hover img {
-    transform: scale(1.1);
-    cursor: zoom-in;
-}
-
-
-
-/*-------------------------------------------------- Counter CSS -----------------------*/
-
-#counter {
-    background: #ccc;
-}
-.counter h4 {
-    text-align: center;
-    line-height: 30px;
-}
-.counter h4 span {
-    font-size: 60px;
-}
-
-
-
-/*-------------------------------------------------- Team CSS -----------------------*/
-
-#team {
-	min-height: 595px;
-}
-.team-member img{
-    width: 100%;
-}
-.team-member{
-    position: relative;
-    overflow: hidden;
-    transition: 5s;
-}
-.team-member:hover {
-    transition: .5s;
-}
-.team-member-overlay{
-    background: rgba(0,0,0,0.6);
-    position: absolute;
-    top: -100%;
-    width: 100%;
-    height: 100%;
-    margin-top: -60px;
-}
-.team-member:hover .team-member-overlay{
-    top: 0;
-}
-.member-social {
-    position: absolute;
-    top: 44%;
-    left: 0;
-    width: 100%;
-}
-.team-member i{
-    position: relative;
-    font-size: 17px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    color: #fff;
-    border: 1px solid white;
-    margin: 0 5px;
-    transition: .3s;
-}
-.team-member i:hover{
-    cursor: pointer;
-}
-.member-facebook {
-    top: -250px;
-}
-.team-member:hover .member-facebook{
-    top: 0;
-}
-.member-twitter{
-    left: -230px;
-}
-.team-member:hover .member-twitter{
-    left: 0;
-}
-.member-linkedin{
-    bottom: -230px;
-}
-.team-member:hover .member-linkedin{
-    bottom: 0;
-}
-.member-website{
-    right: -230px;
-}
-.team-member:hover .member-website{
-    right: 0;
-}
-.member-facebook:hover,
-.social i.fa-facebook:hover{
-    background: #3B5998;
-    border: 1px solid #3B5998;
-}
-.member-twitter:hover,
-.social i.fa-twitter:hover{
-    background: #5EA9DD;
-    border: 1px solid #5EA9DD;
-}
-.member-linkedin:hover,
-.social i.fa-linkedin:hover{
-    background: #0177B5;
-    border: 1px solid #0177B5;
-}
-.member-website:hover,
-.social i.fa-website:hover{
-    background: #DD4B39;
-    border: 1px solid #DD4B39;
-}
-
-/*-- OWL Carousel --*/
-#owl-carousel{
-    position: relative;
-}
-.owl-controls{
-    display: none!important;
-}
-#owl-demo img{
-    width: 100%;
-}
-.owl-item{
-    padding: 0 5px;
-	min-width:300px;
-}
-.member-details p {
-    text-align: center;
-}
-.team-member .member-details {
-    position: relative;
+    text-transform: uppercase;
+    font-size: 16px;
     margin-top: 10px;
-    transition: 3s;
 }
-
 
 
 /*-------------------------------------------------- Testimonial CSS -----------------------*/
@@ -456,12 +236,15 @@ form .col-md-8{
 }
 form input[type="text"], 
 form input[type="email"], 
+form select, 
 form textarea {
     width: 100%;
     margin: 5px 0;
     padding: 10px 15px;
+    height: 42px;
     color: #333;
     border: 1px solid #000000;
+    border-radius: 0;
 }
 form textarea {
     width: 100%;

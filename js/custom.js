@@ -103,17 +103,8 @@ $(document).ready(function(){
     $('.about_menu').click(function() {
         $('html,body').animate({scrollTop:$('#about').offset().top - 60}, 1000);
     });
-    $('.service_menu').click(function() {
-        $('html,body').animate({scrollTop:$('#service').offset().top - 60}, 1000);
-    });
-    $('.portfolio_menu').click(function() {
-        $('html,body').animate({scrollTop:$('#portfolio').offset().top - 60}, 1000);
-    });
-    $('.in_short_menu').click(function() {
-        $('html,body').animate({scrollTop:$('#counter').offset().top - 60}, 1000);
-    });
-    $('.team_menu').click(function() {
-        $('html,body').animate({scrollTop:$('#team').offset().top - 60}, 1000);
+    $('.pricing button').click(function() {
+        $('html,body').animate({scrollTop:$('#contact').offset().top - 60}, 1000);
     });
     $('.testimonial_menu').click(function() {
         $('html,body').animate({scrollTop:$('#text-slider').offset().top - 60}, 1000);
