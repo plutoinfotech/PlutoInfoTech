@@ -1,0 +1,140 @@
+@media screen and (max-width: 1100px){
+    .project_img {
+        left: 5%;
+        width: 40%;
+    }
+    .slider_content {
+        right: 5%;
+        width: 40%;
+    }
+}
+
+
+
+@media screen and (max-width: 1023px){
+    #menu .container,
+    #menu .container-fluid {
+        padding: 0;
+    }
+    .navbar-header {
+        width: 100%;
+    }
+    .navbar-brand {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0 !important;
+    }
+    .navbar-brand>img {
+        display: inline-block;
+    }
+    .navbar-right {
+        display: table;
+        margin: 0 auto;
+        float: inherit !important;
+    }
+    .about h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .element-item {
+        width: 33.33%;
+    }
+    .counter h4 {
+        margin: 30px;
+    }
+    form input[type="submit"] {
+        position: relative;
+        transform: inherit;
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        padding: 10px;
+    }
+    form input[type="submit"]:hover {
+        background: #111;
+        color: #fff;
+        border-color: #111;
+    }
+    .widget {
+        text-align: center;
+        margin: 20px auto;
+    }
+    .address p {
+        display: table;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media screen and (max-width: 767px){
+    .navbar-brand {
+        width: initial;
+        display: table;
+        margin: 5px 20px !important;
+    }
+    .navbar-toggle {
+        border-radius: 1px;
+        margin: 19px 5px;
+        border-color: #f1f1f1;
+    }
+    .container-fluid>.navbar-collapse {
+        margin: 0;
+        padding: 0;
+        background: rgba(0,0,0,.9);
+    }
+    .navbar-right {
+        display: block;
+        text-align: center;
+    }
+    .navbar-nav>li {
+        border-bottom: 1px solid #ddd;
+    }
+    .button-group button:before, 
+    .button-group button:after,
+    .slider_content {
+        display: none;
+    }
+    .project_img {
+        width: 90%;
+    }
+    .button-group {
+        padding: 0;
+    }
+    .button-group button {
+        margin: 0;
+        border-right: 1px solid #ddd;
+    }
+    .element-item {
+        width: 50%;
+    }
+    .counter h4 {
+        margin: 50px;
+    }
+    .copyright p {
+        float: inherit !important;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

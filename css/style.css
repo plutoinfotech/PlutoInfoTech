@@ -1,0 +1,592 @@
+/*-------------------------------------------------- Fonts -----------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+
+
+/*-------------------------------------------------- Reset CSS -----------------------*/
+
+img {
+	max-width: 100%;
+	border: none;
+}
+li{
+	list-style: none;
+}
+a, a:hover, a:focus {
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p, a, b, ul, li {
+	margin: 0;
+	padding: 0;
+}
+p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+}
+a:hover, a:focus {
+    color: #E93100;
+}
+button:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+}
+::selection {
+    color: #fff;
+    background: #000;
+}
+
+
+
+/*-------------------------------------------------- Common Class -----------------------*/
+
+section {
+    padding: 75px 0;
+}
+.section-heading {
+    padding: 10px;
+    display: table;
+    margin: 0 auto 50px auto;
+    border: 4px solid #333;
+    text-transform: uppercase;
+    position: relative;
+    border-right-color: #E93100;
+    font-weight: 600;
+}
+.section-heading span {
+    color: #E93100;
+}
+.section-heading:before {
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    background: #E93100;
+    content: "";
+    top: -4px;
+    right: -4px;
+}
+.section-heading:after {
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background: #E93100;
+    content: "";
+    bottom: -4px;
+    right: -4px;
+}
+.space {
+    margin-bottom: 5px;
+}
+.space2 {
+    margin-bottom: 10px;
+}
+.white {
+    color: #fff;
+}
+.color {
+	color: #e93100;
+}
+.link {
+    padding: 10px;
+    border: 1px solid;
+    color: #e93100;
+    display: table;
+    text-transform: uppercase;
+}
+.link:hover {
+    background: #e93100;
+    color: #fff;
+    border-color: #e93100;
+}
+
+
+
+/*-------------------------------------------------- Body CSS -----------------------*/
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+    font-weight: 600;
+}
+
+
+
+/*-------------------------------------------------- Header CSS -----------------------*/
+
+.navbar-brand {
+    padding: 10px;
+    cursor: pointer;
+}
+.navbar-default {
+    background: transparent;
+    border: none;
+    margin: 0;
+}
+.navbar-nav>li {
+    padding: 20px;
+    cursor: pointer;
+}
+.navbar-nav>li:hover {
+    background: #e93100;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #f1f1f1;
+}
+.menu_bg {
+    background: #333;
+}
+
+
+
+/*-------------------------------------------------- Slider CSS -----------------------*/
+
+#slider {
+    padding: 0;
+}
+.slider {
+    background: #333;
+}
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.project_img,
+.slider_content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 39%;
+    transform: translateY(-50%);
+}
+.slider_content {
+    left: initial;
+    right: 10%;
+}
+.slider_content a:first-child {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.slider_content p {
+    margin: 15px 0;
+}
+
+
+
+/*-------------------------------------------------- About CSS -----------------------*/
+
+#about {
+    background: #fff;
+}
+.progress-bar {
+    background-color: #E93100;
+}
+.skill label{
+    float: left;
+    width: 110px;
+}
+
+
+
+/*-------------------------------------------------- Service CSS -----------------------*/
+
+#service {
+	background: #ccc;
+}
+.nav-tabs {
+    border-bottom: none;
+}
+.nav-tabs>li {
+    width: 100%;
+    margin: 0;
+}
+.nav-tabs>li>a {
+    border: 1px solid #ddd !important;
+    margin: 7px 0;
+    color: #000;
+    background: #bbb;
+}
+.nav-tabs>li>a i {
+    float: right;
+    font-size: 20px;
+}
+.tab-content {
+    margin: 7px 0;
+    padding: 0 7px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+/*-------------------------------------------------- Portfolio CSS -----------------------*/
+
+.button-group {
+    display: table;
+    margin: 40px auto;
+    overflow: hidden;
+    padding: 0 10px;
+}
+.button-group button {
+    background: #333;
+    color: #fff;
+    border: none;
+    float: left;
+    padding: 15px 25px;
+    margin: 0;
+    position: relative;
+    border-right: 1px solid;
+}
+.button.is-checked:hover:before,
+.button.is-checked:hover:after,
+.button.is-checked:hover,
+.button.is-checked:before,
+.button.is-checked:after,
+.button.is-checked {
+    background-color: #e93100;
+}
+.element-item {
+    position: relative;
+    float: left;
+    width: 25%;
+    height: auto;
+    max-height: 260px;
+    background: #888;
+    color: #262524;
+    overflow: hidden;
+}
+.element-item:hover img {
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+
+
+
+/*-------------------------------------------------- Counter CSS -----------------------*/
+
+#counter {
+    background: #ccc;
+}
+.counter h4 {
+    text-align: center;
+    line-height: 30px;
+}
+.counter h4 span {
+    font-size: 60px;
+}
+
+
+
+/*-------------------------------------------------- Team CSS -----------------------*/
+
+#team {
+	min-height: 595px;
+}
+.team-member img{
+    width: 100%;
+}
+.team-member{
+    position: relative;
+    overflow: hidden;
+    transition: 5s;
+}
+.team-member:hover {
+    transition: .5s;
+}
+.team-member-overlay{
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    margin-top: -60px;
+}
+.team-member:hover .team-member-overlay{
+    top: 0;
+}
+.member-social {
+    position: absolute;
+    top: 44%;
+    left: 0;
+    width: 100%;
+}
+.team-member i{
+    position: relative;
+    font-size: 17px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    border: 1px solid white;
+    margin: 0 5px;
+    transition: .3s;
+}
+.team-member i:hover{
+    cursor: pointer;
+}
+.member-facebook {
+    top: -250px;
+}
+.team-member:hover .member-facebook{
+    top: 0;
+}
+.member-twitter{
+    left: -230px;
+}
+.team-member:hover .member-twitter{
+    left: 0;
+}
+.member-linkedin{
+    bottom: -230px;
+}
+.team-member:hover .member-linkedin{
+    bottom: 0;
+}
+.member-website{
+    right: -230px;
+}
+.team-member:hover .member-website{
+    right: 0;
+}
+.member-facebook:hover,
+.social i.fa-facebook:hover{
+    background: #3B5998;
+    border: 1px solid #3B5998;
+}
+.member-twitter:hover,
+.social i.fa-twitter:hover{
+    background: #5EA9DD;
+    border: 1px solid #5EA9DD;
+}
+.member-linkedin:hover,
+.social i.fa-linkedin:hover{
+    background: #0177B5;
+    border: 1px solid #0177B5;
+}
+.member-website:hover,
+.social i.fa-website:hover{
+    background: #DD4B39;
+    border: 1px solid #DD4B39;
+}
+
+/*-- OWL Carousel --*/
+#owl-carousel{
+    position: relative;
+}
+.owl-controls{
+    display: none!important;
+}
+#owl-demo img{
+    width: 100%;
+}
+.owl-item{
+    padding: 0 5px;
+	min-width:300px;
+}
+.member-details p {
+    text-align: center;
+}
+.team-member .member-details {
+    position: relative;
+    margin-top: 10px;
+    transition: 3s;
+}
+
+
+
+/*-------------------------------------------------- Testimonial CSS -----------------------*/
+
+#text-slider{
+    background: #ccc;
+}
+#text-slider .item {
+    min-height: 240px;
+}
+#text-slider .item p {
+    max-width: 730px;
+    margin: 0 auto 30px auto;
+    padding: 0 10px;
+    font-size: 18px;
+}
+.carousel-indicators li,
+.carousel-indicators .active{
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    border-radius: 0;
+    border-color: #000;
+}
+.carousel-indicators .active{
+    background-color: #000;
+    border-color: #000;
+}
+
+
+
+/*-------------------------------------------------- Contact CSS -----------------------*/
+
+#contact {
+    font-weight: 400;
+}
+form {
+    overflow: hidden;
+}
+form .col-md-1,
+form .col-md-4,
+form .col-md-8{
+    padding: 0 5px;
+	position: relative;
+}
+form input[type="text"], 
+form input[type="email"], 
+form textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 15px;
+    color: #333;
+    border: 1px solid #000000;
+}
+form textarea {
+    width: 100%;
+    min-height: 198px;
+    max-width: 100%;
+    resize: none;
+}
+form input[type="submit"] {
+    color: #000000;
+    background: transparent;
+    border: 1px solid;
+    text-transform: uppercase;
+    margin: 5px;
+    position: absolute;
+    top: 20px;
+    right: -58px;
+    transform: rotate(35deg);
+    width: 200px;
+    padding: 5px;
+}
+
+
+
+/*-------------------------------------------------- Footer CSS -----------------------*/
+
+.footer {
+    background: #333;
+}
+.footer h3 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+.footer-widget {
+    padding: 50px 0 30px;
+}
+#footer p {
+    font-size: 14px;
+}
+.address p {
+    padding-bottom: 5px;
+}
+.address .icon {
+    height: 20px;
+    width: 20px;
+    float: left;
+    font-size: 1.2857em;
+    line-height: 15px;
+    border: none;
+    margin-right: 10px;
+    margin-top: 6px;
+    text-align: center;
+}
+i.fa.fa-envelope {
+    font-size: 15px;
+}
+.our_product a {
+    color: #fff;
+    padding: 4px;
+    display: block;
+    font-weight: 400;
+}
+.our_product a:hover {
+    color: #e93100;
+}
+.widget ul {
+    display: table;
+    margin: 0 auto;
+}
+.follow li {
+    float: left;
+}
+.follow li a {
+    height: 55px;
+    width: 55px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    line-height: 55px;
+}
+.fb {
+    background-color: #47639e;
+}
+.twi {
+    background-color: #00abeb;
+}
+.lin {
+    background-color: #007bb6;
+}
+.gplus {
+    background-color: #dd4b39;
+}
+.skp {
+    background-color: #00acec;
+}
+.copyright {
+    background: #222;
+    padding: 10px 0;
+}
+.copyright p:first-child {
+    float: left;
+}
+.copyright p:last-child {
+    float: right;
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------- Transition CSS -----------------------*/
+
+a,
+li,
+.element-item img,
+.team-member:hover .member-details {
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+}
